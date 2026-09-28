@@ -1,0 +1,179 @@
+{
+  "refs": [
+    {
+      "id": "perfume-ref-03",
+      "model": "google/nano-banana-pro/text-to-image",
+      "ext": "png",
+      "body": {
+        "prompt": "Extremely clean studio product photograph of a completely unbranded contemporary perfume bottle.\n\nFrosted matte glass rectangular body, soft warm-grey glass, simple cylindrical matte black cap, no label, no logo, no brand marks. Slightly tall proportions. Sits alone on a seamless warm light-grey background.\n\nThree-quarter product view, bottle centered, physically believable glass and refraction, soft large-box studio lighting, subtle contact shadow, premium commercial product photography.\n\nNo props, no flowers, no mist, no dramatic styling, no text, no watermark.\n\nVariation 3: slight angle and lighting difference only.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "3315b2a668b84e87941b248f4580eaab",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/95cb4e5c-576c-4967-886d-b44fc27f2f12.png"
+      ],
+      "local": "public/lab/perfume/perfume-ref-03.png"
+    },
+    {
+      "id": "perfume-ref-02",
+      "model": "google/nano-banana-pro/text-to-image",
+      "ext": "png",
+      "body": {
+        "prompt": "Extremely clean studio product photograph of a completely unbranded contemporary perfume bottle.\n\nFrosted matte glass rectangular body, soft warm-grey glass, simple cylindrical matte black cap, no label, no logo, no brand marks. Slightly tall proportions. Sits alone on a seamless warm light-grey background.\n\nThree-quarter product view, bottle centered, physically believable glass and refraction, soft large-box studio lighting, subtle contact shadow, premium commercial product photography.\n\nNo props, no flowers, no mist, no dramatic styling, no text, no watermark.\n\nVariation 2: slight angle and lighting difference only.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "e17500a2437741519c0830c78fb3b087",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/fb03c06a-a65e-4360-87b0-fe0890f98a48.png"
+      ],
+      "local": "public/lab/perfume/perfume-ref-02.png"
+    },
+    {
+      "id": "perfume-ref-01",
+      "model": "google/nano-banana-pro/text-to-image",
+      "ext": "png",
+      "body": {
+        "prompt": "Extremely clean studio product photograph of a completely unbranded contemporary perfume bottle.\n\nFrosted matte glass rectangular body, soft warm-grey glass, simple cylindrical matte black cap, no label, no logo, no brand marks. Slightly tall proportions. Sits alone on a seamless warm light-grey background.\n\nThree-quarter product view, bottle centered, physically believable glass and refraction, soft large-box studio lighting, subtle contact shadow, premium commercial product photography.\n\nNo props, no flowers, no mist, no dramatic styling, no text, no watermark.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "d67166ca590b436ba27e95a8665373a6",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/07c5334f-273c-46a9-8de3-6f66baf21856.png"
+      ],
+      "local": "public/lab/perfume/perfume-ref-01.png"
+    }
+  ],
+  "worlds": [
+    {
+      "id": "world-greenhouse",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact perfume bottle from the reference image unchanged.\n\nPlace it on a weathered wooden bench inside a humid glass greenhouse packed with oversized tropical leaves. Soft overcast daylight through wet glass, condensation droplets, rich greens, organic messiness \u2014 botanical documentary, not a clean beauty studio.\n\nPhotorealistic. No logos, no text, no fantasy glow.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/95cb4e5c-576c-4967-886d-b44fc27f2f12.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "9236b874090b4846859041f0c4ca81ec",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/38074c32-8396-43db-a14f-b1d9721ec3ca.png"
+      ],
+      "local": "public/lab/perfume/world-greenhouse.png"
+    },
+    {
+      "id": "world-alpine",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact perfume bottle from the reference image unchanged \u2014 identical shape, proportions, glass, and black cap. Do not redesign it.\n\nPlace that same bottle on a massive pale granite rock above a fog-filled alpine valley at dawn. Cold morning atmosphere, low golden sunlight through clouds, subtle frost on surrounding stone only \u2014 not on the bottle.\n\nPremium outdoor advertising photography. Photorealistic. Believable materials and lighting. Restrained color, no fantasy glow, no logos, no text.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/95cb4e5c-576c-4967-886d-b44fc27f2f12.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "67c051cddd8349f7bf48c86149fe257a",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/b030b114-e324-4f65-8a07-4bfdffed2b74.png"
+      ],
+      "local": "public/lab/perfume/world-alpine.png"
+    },
+    {
+      "id": "world-studio-void",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact perfume bottle from the reference image unchanged.\n\nPlace it in a dark contemporary photo studio on a matte charcoal seamless, lit by one large softbox from camera-left and a thin rim light. Quiet, expensive, almost surgical product photography. Empty void \u2014 no props.\n\nPhotorealistic. No logos, no text, no neon, no floating mist.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/95cb4e5c-576c-4967-886d-b44fc27f2f12.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "eab5b52b90474b73bfbdd796f08b17b1",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/272010e8-8922-4c7c-bab4-c80263825310.png"
+      ],
+      "local": "public/lab/perfume/world-studio-void.png"
+    },
+    {
+      "id": "world-brutalist",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact perfume bottle from the reference image unchanged \u2014 same shape, proportions, materials.\n\nPlace it inside a monumental brutalist concrete interior with huge geometric walls and stairs. Strong afternoon sun, long architectural shadows, warm grey concrete, subtle haze.\n\nHigh-end contemporary advertising photography. Photorealistic. Minimal composition. No logos, no text, no CGI look.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/95cb4e5c-576c-4967-886d-b44fc27f2f12.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "f0716470c11d4d9ba78e173bb5cc03b6",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/ad9588c7-962d-4ab5-b6ea-2629fd9d43de.png"
+      ],
+      "local": "public/lab/perfume/world-brutalist.png"
+    },
+    {
+      "id": "world-still-life",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact perfume bottle from the reference image unchanged.\n\nClassical dark still-life: the bottle sits on aged dark walnut beside dried lavender stems and a single dried citrus peel. Deep Rembrandt lighting from one side, almost black negative space, quiet Dutch-masters mood updated for a modern fragrance campaign.\n\nPhotorealistic materials. No logos, no text, no bright luxury-ad look, no marble spa aesthetic.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/95cb4e5c-576c-4967-886d-b44fc27f2f12.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "d9ff1a18112c4ce38e98083cdf74d9aa",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/98eee9b7-c83f-4340-bacf-4e08038a3b38.png"
+      ],
+      "local": "public/lab/perfume/world-still-life.png"
+    },
+    {
+      "id": "world-rain-city",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact perfume bottle from the reference image unchanged.\n\nPlace it on wet asphalt at night under a soft streetlamp, shallow puddle reflections, distant city bokeh. Cinematic but quiet \u2014 like a still from a prestige fragrance commercial shot on location, not in a studio.\n\nPhotorealistic materials. No logos, no text, no dystopian cyberpunk, no neon overload.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/95cb4e5c-576c-4967-886d-b44fc27f2f12.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "b90e110733fd4f8694c2b7049c37c9c9",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/ed380f74-d766-401e-923a-eefe697482b4.png"
+      ],
+      "local": "public/lab/perfume/world-rain-city.png"
+    }
+  ],
+  "product_lock_id": "perfume-ref-03",
+  "product_lock_url": "https://d2h7xmz5gqybh9.cloudfront.net/output/95cb4e5c-576c-4967-886d-b44fc27f2f12.png"
+}

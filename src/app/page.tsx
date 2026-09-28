@@ -1,4 +1,4 @@
-import { Machine } from "@/components/machine";
+import { HeroStill, Machine } from "@/components/machine";
 import { contactHref, site } from "@/lib/site";
 
 const situations = [
@@ -92,6 +92,7 @@ export default function Home() {
             </p>
           </div>
 
+          <HeroStill />
           <Machine />
         </section>
 
@@ -177,8 +178,14 @@ export default function Home() {
         </section>
 
         <section className="operator" id="koby">
-          <div className="operator-mark" aria-hidden="true">
-            KK
+          <div className="operator-photo">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/lab/koby/koby-4x5.jpg"
+              alt="Koby"
+              width={614}
+              height={768}
+            />
           </div>
           <div className="operator-copy">
             <p className="eyebrow">The operator</p>
@@ -211,7 +218,7 @@ export default function Home() {
 
       <footer className="footer">
         <span>{site.name}</span>
-        <span>Built by Koby Karp.</span>
+        <span>Built by Koby.</span>
       </footer>
     </div>
   );

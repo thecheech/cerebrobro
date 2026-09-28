@@ -1,153 +1,145 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
-const projects = [
+const experiments = [
   {
     id: "product",
-    label: "01 — Product campaign",
-    brief: {
-      client: "NIKE",
-      job: "New trail shoe",
-      need: "Campaign concept · 12 social assets · 3 days",
-    },
-    stages: ["Reference", "Prompt", "Generations", "Selection", "Final"],
-    caption: "ONE BRIEF → 47 GENERATIONS → 6 DIRECTIONS → 1 CLIENT-READY ASSET",
-    finals: [
-      { tone: "mud", label: "Trail dawn" },
-      { tone: "fog", label: "Ridge line" },
-      { tone: "heat", label: "Finish line" },
+    label: "01 — One object, many worlds",
+    title: "Product lab",
+    caption: "ONE PLAIN SHOE → MULTIPLE ART DIRECTIONS",
+    note: "Starting point: a clean, unbranded product still. The worlds come next.",
+    images: [
+      { src: "/lab/product/product-ref-01.png", label: "Reference" },
+      { src: "/lab/product/product-ref-02.png", label: "Angle B" },
+      { src: "/lab/product/product-ref-03.png", label: "Angle C" },
+      { src: "/lab/product/product-ref-04.png", label: "Angle D" },
     ],
   },
   {
     id: "character",
-    label: "02 — Character",
-    brief: {
-      client: "STREAMING",
-      job: "IP character lock",
-      need: "Moodboard → consistent hero · 8 looks",
-    },
-    stages: ["Moodboard", "Identity", "Looks", "Consistency", "Lock"],
-    caption: "ONE FACE → 31 LOOKS → 4 CONSISTENT → 1 LOCKED HERO",
-    finals: [
-      { tone: "ink", label: "Portrait A" },
-      { tone: "neon", label: "Portrait B" },
-      { tone: "bone", label: "Portrait C" },
+    label: "02 — Character lock",
+    title: "Character lab",
+    caption: "ONE FACE → MULTIPLE LOOKS",
+    note: "Find one identity. Then test whether it holds across scenes.",
+    images: [
+      { src: "/lab/character/character-ref-01.png", label: "Lock" },
+      { src: "/lab/character/character-ref-02.png", label: "Look 02" },
+      { src: "/lab/character/character-ref-03.png", label: "Look 03" },
+      { src: "/lab/character/character-ref-04.png", label: "Look 04" },
+      { src: "/lab/character/character-ref-05.png", label: "Look 05" },
+      { src: "/lab/character/character-ref-06.png", label: "Look 06" },
+      { src: "/lab/character/character-ref-07.png", label: "Look 07" },
+      { src: "/lab/character/character-ref-08.png", label: "Look 08" },
     ],
   },
   {
-    id: "video",
-    label: "03 — Video",
-    brief: {
-      client: "FMCG",
-      job: "15s social cut",
-      need: "Still → motion · 3 hooks · tomorrow",
-    },
-    stages: ["Still", "Motion", "Hooks", "Edit", "Export"],
-    caption: "ONE STILL → 18 MOTION TESTS → 3 HOOKS → 1 CUT",
-    finals: [
-      { tone: "pulse", label: "Hook 01" },
-      { tone: "sweep", label: "Hook 02" },
-      { tone: "cut", label: "Final cut" },
+    id: "hero",
+    label: "03 — Campaign stills",
+    title: "Hero experiments",
+    caption: "SAME OBJECT → CINEMATIC PRODUCTION",
+    note: "Not a fake Nike brief. Independent experiments that look like expensive production.",
+    images: [
+      { src: "/lab/hero/hero-01.png", label: "Hero 01" },
+      { src: "/lab/hero/hero-02.png", label: "Hero 02" },
+      { src: "/lab/hero/hero-04.png", label: "Hero 04" },
+      { src: "/lab/hero/hero-05.png", label: "Hero 05" },
+      { src: "/lab/hero/hero-06.png", label: "Hero 06" },
+      { src: "/lab/hero/hero-07.png", label: "Hero 07" },
+      { src: "/lab/hero/hero-08.png", label: "Hero 08" },
+      { src: "/lab/hero/hero-09.png", label: "Hero 09" },
+      { src: "/lab/hero/hero-10.png", label: "Hero 10" },
+      { src: "/lab/hero/hero-11.png", label: "Hero 11" },
+      { src: "/lab/hero/hero-12.png", label: "Hero 12" },
+      { src: "/lab/hero/hero-03.png", label: "Hero 03" },
     ],
   },
 ] as const;
 
-type Project = (typeof projects)[number];
-
 export function Machine() {
   const [active, setActive] = useState(0);
-  const [stage, setStage] = useState(0);
-  const project = projects[active];
-
-  useEffect(() => {
-    setStage(0);
-    const id = window.setInterval(() => {
-      setStage((s) => (s + 1) % project.stages.length);
-    }, 1400);
-    return () => window.clearInterval(id);
-  }, [active, project.stages.length]);
+  const [selected, setSelected] = useState(0);
+  const experiment = experiments[active];
+  const featured = experiment.images[Math.min(selected, experiment.images.length - 1)];
 
   return (
     <div className="machine" id="work">
-      <div className="machine-tabs" role="tablist" aria-label="Work examples">
-        {projects.map((p, i) => (
+      <div className="machine-tabs" role="tablist" aria-label="Lab experiments">
+        {experiments.map((exp, i) => (
           <button
-            key={p.id}
+            key={exp.id}
             type="button"
             role="tab"
             aria-selected={i === active}
             className={i === active ? "is-active" : undefined}
-            onClick={() => setActive(i)}
+            onClick={() => {
+              setActive(i);
+              setSelected(0);
+            }}
           >
-            {p.label}
+            {exp.label}
           </button>
         ))}
       </div>
 
       <div className="machine-stage">
-        <BriefPanel project={project} stage={stage} />
-        <ProcessPanel project={project} stage={stage} />
+        <aside className="machine-brief">
+          <div className="machine-kicker">Watch the process</div>
+          <h3 className="machine-title">{experiment.title}</h3>
+          <p className="machine-note">{experiment.note}</p>
+          <p className="machine-live-label">
+            <span className="pulse" />
+            Showing {featured.label}
+          </p>
+        </aside>
+
+        <div className="machine-viz">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            className="machine-feature"
+            src={featured.src}
+            alt={`${experiment.title} — ${featured.label}`}
+            width={1856}
+            height={2304}
+          />
+        </div>
       </div>
 
-      <p className="machine-caption">{project.caption}</p>
-    </div>
-  );
-}
-
-function BriefPanel({ project, stage }: { project: Project; stage: number }) {
-  return (
-    <aside className="machine-brief">
-      <div className="machine-kicker">Watch the process</div>
-      <dl>
-        <div>
-          <dt>Client</dt>
-          <dd>{project.brief.client}</dd>
-        </div>
-        <div>
-          <dt>Job</dt>
-          <dd>{project.brief.job}</dd>
-        </div>
-        <div>
-          <dt>Ask</dt>
-          <dd>{project.brief.need}</dd>
-        </div>
-      </dl>
-      <ol className="machine-steps" aria-label="Pipeline">
-        {project.stages.map((name, i) => (
-          <li key={name} className={i === stage ? "is-live" : i < stage ? "is-done" : undefined}>
-            <span>{String(i + 1).padStart(2, "0")}</span>
-            {name}
-          </li>
-        ))}
-      </ol>
-    </aside>
-  );
-}
-
-function ProcessPanel({ project, stage }: { project: Project; stage: number }) {
-  const progress = stage / (project.stages.length - 1);
-
-  return (
-    <div className="machine-viz" data-project={project.id}>
-      <div className="machine-grid" aria-hidden="true">
-        {project.finals.map((tile, i) => (
-          <div
-            key={tile.label}
-            className={`gen gen-${tile.tone} ${i <= Math.floor(progress * 2) ? "is-on" : ""}`}
-            style={{ animationDelay: `${i * 120}ms` }}
+      <div className="machine-thumbs" role="list">
+        {experiment.images.map((image, i) => (
+          <button
+            key={image.src}
+            type="button"
+            role="listitem"
+            className={i === selected ? "is-active" : undefined}
+            onClick={() => setSelected(i)}
+            aria-label={`Show ${image.label}`}
           >
-            <span>{tile.label}</span>
-          </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={image.src} alt="" width={464} height={576} />
+            <span>{image.label}</span>
+          </button>
         ))}
-        <div className={`gen gen-final ${stage >= project.stages.length - 1 ? "is-on is-final" : ""}`}>
-          <span>Final</span>
-        </div>
       </div>
-      <div className="machine-live">
-        <span className="pulse" />
-        {project.stages[stage]}
-      </div>
+
+      <p className="machine-caption">{experiment.caption}</p>
     </div>
+  );
+}
+
+export function HeroStill() {
+  return (
+    <figure className="hero-still">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/lab/hero/hero-01.png"
+        alt="Experimental campaign still of an unbranded black running shoe on stone with flowing fabric"
+        width={1856}
+        height={2304}
+      />
+      <figcaption>
+        Independent experiment — not a client case study. Generated for CerebroBro.
+      </figcaption>
+    </figure>
   );
 }

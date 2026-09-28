@@ -1,0 +1,604 @@
+{
+  "items": [
+    {
+      "id": "hero-03",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nTighter crop on the shoe and fabric, more intimate commercial framing.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "4a81d3e3ee364791b41030f2f1ce1ff6",
+      "status": "completed",
+      "submitted_at": 1790608816.45373,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/5158ada7-d9cc-4890-b4b2-139430742a7c.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/5158ada7-d9cc-4890-b4b2-139430742a7c.png"
+      ],
+      "local": "public/lab/hero/hero-03.png"
+    },
+    {
+      "id": "hero-08",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nHigher camera angle looking slightly down, more landscape context.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "010c47fe32644e26b7d4b861bc8a88d9",
+      "status": "completed",
+      "submitted_at": 1790608816.429587,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/0377de6f-7723-478f-9e06-44a3138288ff.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/0377de6f-7723-478f-9e06-44a3138288ff.png"
+      ],
+      "local": "public/lab/hero/hero-08.png"
+    },
+    {
+      "id": "hero-02",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nSlightly wider framing, more negative space on the left.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "c03a5a0befc34c3898341daafc74f3c0",
+      "status": "completed",
+      "submitted_at": 1790608816.423984,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/6d934f2b-148b-45aa-9b30-cffaed069dec.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/6d934f2b-148b-45aa-9b30-cffaed069dec.png"
+      ],
+      "local": "public/lab/hero/hero-02.png"
+    },
+    {
+      "id": "product-ref-01",
+      "group": "product",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Extremely clean studio product photograph of a completely unbranded matte black modern running shoe on a neutral warm grey seamless background.\n\nThree-quarter product view, shoe centered, realistic proportions and materials, soft large-box studio lighting, subtle contact shadow, premium commercial product photography.\n\nNo logo, no text, no props, no dramatic styling.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "5f1326e1ed334f3ab9ac0cb327fc9397",
+      "status": "completed",
+      "submitted_at": 1790608817.153288,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/106e4ced-de84-4e71-8e30-a3ba12bce23f.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/106e4ced-de84-4e71-8e30-a3ba12bce23f.png"
+      ],
+      "local": "public/lab/product/product-ref-01.png"
+    },
+    {
+      "id": "hero-12",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nFabric movement frozen mid-sweep behind the shoe, dramatic silhouette edge.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "f63255c787ea4f39ba51eaccbf0d68e4",
+      "status": "completed",
+      "submitted_at": 1790608816.490031,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/b91d2050-5278-4f90-b458-e7e730819cc0.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/b91d2050-5278-4f90-b458-e7e730819cc0.png"
+      ],
+      "local": "public/lab/hero/hero-12.png"
+    },
+    {
+      "id": "hero-11",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nAlmost monochrome restrained palette, very premium.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "7c30d440064a44a9a7abd837b38b1bfc",
+      "status": "completed",
+      "submitted_at": 1790608816.504232,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/224c9ae8-966b-4cd9-8d04-4585bfd7acdb.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/224c9ae8-966b-4cd9-8d04-4585bfd7acdb.png"
+      ],
+      "local": "public/lab/hero/hero-11.png"
+    },
+    {
+      "id": "character-ref-06",
+      "group": "character",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Contemporary editorial portrait of a fictional 30-year-old female creative director with short dark brown hair, strong eyebrows, subtle freckles, warm olive skin, distinctive slightly asymmetrical smile, understated black clothing.\n\nShe looks intelligent, confident and slightly amused rather than posed.\n\nNatural window light, muted interior, 50mm lens, shallow depth of field, premium editorial photography, subtle film grain, realistic skin texture.\n\nNo glamour retouching, no beauty filter, no text, no logo.\n\nSubtle expression variation 6.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "efd6fa4465874234910d1a94b58545b4",
+      "status": "completed",
+      "submitted_at": 1790608817.281745,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/cc297dd0-e377-443a-a3c6-8d92c0711bff.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/cc297dd0-e377-443a-a3c6-8d92c0711bff.png"
+      ],
+      "local": "public/lab/character/character-ref-06.png"
+    },
+    {
+      "id": "product-ref-03",
+      "group": "product",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Extremely clean studio product photograph of a completely unbranded matte black modern running shoe on a neutral warm grey seamless background.\n\nThree-quarter product view, shoe centered, realistic proportions and materials, soft large-box studio lighting, subtle contact shadow, premium commercial product photography.\n\nNo logo, no text, no props, no dramatic styling.\n\nVariation 3: slight angle difference.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "a5c605bf827644eb86b522eb8d327313",
+      "status": "completed",
+      "submitted_at": 1790608817.247688,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/60dc89d6-bcb1-46d5-913a-edbcac7c03d9.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/60dc89d6-bcb1-46d5-913a-edbcac7c03d9.png"
+      ],
+      "local": "public/lab/product/product-ref-03.png"
+    },
+    {
+      "id": "hero-09",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nDust motes visible in the sunbeam, quieter and more atmospheric.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "0da704feea1a4b1680b765dfa0e0dd0b",
+      "status": "completed",
+      "submitted_at": 1790608816.475327,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/32731466-cfa5-4960-b706-8c1cd8dae600.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/32731466-cfa5-4960-b706-8c1cd8dae600.png"
+      ],
+      "local": "public/lab/hero/hero-09.png"
+    },
+    {
+      "id": "character-ref-03",
+      "group": "character",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Contemporary editorial portrait of a fictional 30-year-old female creative director with short dark brown hair, strong eyebrows, subtle freckles, warm olive skin, distinctive slightly asymmetrical smile, understated black clothing.\n\nShe looks intelligent, confident and slightly amused rather than posed.\n\nNatural window light, muted interior, 50mm lens, shallow depth of field, premium editorial photography, subtle film grain, realistic skin texture.\n\nNo glamour retouching, no beauty filter, no text, no logo.\n\nSubtle expression variation 3.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "098fda5013024f6b9e24734ddca78a78",
+      "status": "completed",
+      "submitted_at": 1790608817.308411,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/aafe74ad-bd4d-4d35-b4fd-72e566200a56.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/aafe74ad-bd4d-4d35-b4fd-72e566200a56.png"
+      ],
+      "local": "public/lab/character/character-ref-03.png"
+    },
+    {
+      "id": "character-ref-02",
+      "group": "character",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Contemporary editorial portrait of a fictional 30-year-old female creative director with short dark brown hair, strong eyebrows, subtle freckles, warm olive skin, distinctive slightly asymmetrical smile, understated black clothing.\n\nShe looks intelligent, confident and slightly amused rather than posed.\n\nNatural window light, muted interior, 50mm lens, shallow depth of field, premium editorial photography, subtle film grain, realistic skin texture.\n\nNo glamour retouching, no beauty filter, no text, no logo.\n\nSubtle expression variation 2.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "968085cbcb28417b8a308454aaf20ae1",
+      "status": "completed",
+      "submitted_at": 1790608817.315995,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/23e4a9cb-b1e5-4f27-977b-cc2e1deb26a7.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/23e4a9cb-b1e5-4f27-977b-cc2e1deb26a7.png"
+      ],
+      "local": "public/lab/character/character-ref-02.png"
+    },
+    {
+      "id": "character-ref-01",
+      "group": "character",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Contemporary editorial portrait of a fictional 30-year-old female creative director with short dark brown hair, strong eyebrows, subtle freckles, warm olive skin, distinctive slightly asymmetrical smile, understated black clothing.\n\nShe looks intelligent, confident and slightly amused rather than posed.\n\nNatural window light, muted interior, 50mm lens, shallow depth of field, premium editorial photography, subtle film grain, realistic skin texture.\n\nNo glamour retouching, no beauty filter, no text, no logo.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "2266c1ea3b5f4e23ae64c2112b137a2a",
+      "status": "completed",
+      "submitted_at": 1790608817.3217092,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/01731081-a2a4-4b6b-a06a-f477483ba9da.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/01731081-a2a4-4b6b-a06a-f477483ba9da.png"
+      ],
+      "local": "public/lab/character/character-ref-01.png"
+    },
+    {
+      "id": "hero-05",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nStronger side light, longer sculptural shadows across the stone.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "32cf4daf5b0f4db783cc8e715ecc299b",
+      "status": "completed",
+      "submitted_at": 1790608816.50757,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/f08a0cf8-8f1b-4632-a908-9e78505a57b4.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/f08a0cf8-8f1b-4632-a908-9e78505a57b4.png"
+      ],
+      "local": "public/lab/hero/hero-05.png"
+    },
+    {
+      "id": "hero-01",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "22bfa147c2a4485999c4ae3983c59dae",
+      "status": "completed",
+      "submitted_at": 1790608816.486751,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/f3bae1a7-a764-4365-be31-85820ddf1c23.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/f3bae1a7-a764-4365-be31-85820ddf1c23.png"
+      ],
+      "local": "public/lab/hero/hero-01.png"
+    },
+    {
+      "id": "hero-07",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nLower camera angle looking slightly up at the shoe.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "eac76ba8612342a0897784c251f0c63c",
+      "status": "completed",
+      "submitted_at": 1790608816.415915,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/b6761353-fa85-4728-8f20-3358fb303faf.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/b6761353-fa85-4728-8f20-3358fb303faf.png"
+      ],
+      "local": "public/lab/hero/hero-07.png"
+    },
+    {
+      "id": "product-ref-02",
+      "group": "product",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Extremely clean studio product photograph of a completely unbranded matte black modern running shoe on a neutral warm grey seamless background.\n\nThree-quarter product view, shoe centered, realistic proportions and materials, soft large-box studio lighting, subtle contact shadow, premium commercial product photography.\n\nNo logo, no text, no props, no dramatic styling.\n\nVariation 2: slight angle difference.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "230164f39300479a8541afb0b1ce95c1",
+      "status": "completed",
+      "submitted_at": 1790608817.246495,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/7ed5314b-c98e-4f41-9e14-f63daaf263b1.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/7ed5314b-c98e-4f41-9e14-f63daaf263b1.png"
+      ],
+      "local": "public/lab/product/product-ref-02.png"
+    },
+    {
+      "id": "character-ref-08",
+      "group": "character",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Contemporary editorial portrait of a fictional 30-year-old female creative director with short dark brown hair, strong eyebrows, subtle freckles, warm olive skin, distinctive slightly asymmetrical smile, understated black clothing.\n\nShe looks intelligent, confident and slightly amused rather than posed.\n\nNatural window light, muted interior, 50mm lens, shallow depth of field, premium editorial photography, subtle film grain, realistic skin texture.\n\nNo glamour retouching, no beauty filter, no text, no logo.\n\nSubtle expression variation 8.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "158b58f223304c3a8247903aec8fe55f",
+      "status": "completed",
+      "submitted_at": 1790608817.293368,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/78994b2c-232b-4820-bfaa-06868aa1d676.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/78994b2c-232b-4820-bfaa-06868aa1d676.png"
+      ],
+      "local": "public/lab/character/character-ref-08.png"
+    },
+    {
+      "id": "character-ref-04",
+      "group": "character",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Contemporary editorial portrait of a fictional 30-year-old female creative director with short dark brown hair, strong eyebrows, subtle freckles, warm olive skin, distinctive slightly asymmetrical smile, understated black clothing.\n\nShe looks intelligent, confident and slightly amused rather than posed.\n\nNatural window light, muted interior, 50mm lens, shallow depth of field, premium editorial photography, subtle film grain, realistic skin texture.\n\nNo glamour retouching, no beauty filter, no text, no logo.\n\nSubtle expression variation 4.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "99fa20239d5148838fa6aceb4cc86ad8",
+      "status": "completed",
+      "submitted_at": 1790608817.29849,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/07185108-34e9-4cd3-b7df-df4f96b768bf.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/07185108-34e9-4cd3-b7df-df4f96b768bf.png"
+      ],
+      "local": "public/lab/character/character-ref-04.png"
+    },
+    {
+      "id": "character-ref-07",
+      "group": "character",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Contemporary editorial portrait of a fictional 30-year-old female creative director with short dark brown hair, strong eyebrows, subtle freckles, warm olive skin, distinctive slightly asymmetrical smile, understated black clothing.\n\nShe looks intelligent, confident and slightly amused rather than posed.\n\nNatural window light, muted interior, 50mm lens, shallow depth of field, premium editorial photography, subtle film grain, realistic skin texture.\n\nNo glamour retouching, no beauty filter, no text, no logo.\n\nSubtle expression variation 7.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "0aecd3d05b614f34a7da971b6e7eebe7",
+      "status": "completed",
+      "submitted_at": 1790608817.35679,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/5d6ba339-8b22-44f4-a906-41482b9dacef.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/5d6ba339-8b22-44f4-a906-41482b9dacef.png"
+      ],
+      "local": "public/lab/character/character-ref-07.png"
+    },
+    {
+      "id": "hero-06",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nFabric more translucent and layered, almost glass-like.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "d7b4f70acd85446baa8b2920c57ac521",
+      "status": "completed",
+      "submitted_at": 1790608816.4808981,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/dc14dce8-3ae0-4dc1-bd4b-7683df83059c.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/dc14dce8-3ae0-4dc1-bd4b-7683df83059c.png"
+      ],
+      "local": "public/lab/hero/hero-06.png"
+    },
+    {
+      "id": "hero-04",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nCooler late light, more blue in the shadows, still warm highlights.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "807e0ae25d7f4e90bf8bfc54149bd682",
+      "status": "completed",
+      "submitted_at": 1790608816.471468,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/7c2b05e8-84fb-49f9-81b7-48bf4fbafabc.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/7c2b05e8-84fb-49f9-81b7-48bf4fbafabc.png"
+      ],
+      "local": "public/lab/hero/hero-04.png"
+    },
+    {
+      "id": "hero-10",
+      "group": "hero",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "High-end contemporary advertising photography for an experimental creative studio.\n\nA single ordinary object transformed into an unexpectedly cinematic advertising image: a matte black running shoe resting on a huge sculptural slab of pale stone, surrounded by an impossible landscape of soft translucent fabric flowing through the air like a frozen wave, subtle atmospheric mist, warm late-afternoon sunlight, deep natural shadows, sophisticated editorial art direction.\n\nThe product remains completely believable and physically detailed. The surreal environment feels like an expensive real production rather than digital fantasy.\n\nShot on a high-end full-frame camera, 50mm lens, shallow but controlled depth of field, natural film grain, realistic materials, restrained color palette, premium fashion and sports advertising aesthetic.\n\nMinimal composition, strong negative space, visually striking, sophisticated, contemporary, photorealistic.\n\nNo logos, no text, no watermark, no UI, no futuristic technology, no CGI look.\n\nStone slab more monumental, shoe relatively smaller in frame.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "f5a6e13f94ba470cae44019f573775ad",
+      "status": "completed",
+      "submitted_at": 1790608816.410363,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/dabbbfaa-7800-4241-adc7-91769f37ffa7.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/dabbbfaa-7800-4241-adc7-91769f37ffa7.png"
+      ],
+      "local": "public/lab/hero/hero-10.png"
+    },
+    {
+      "id": "product-ref-04",
+      "group": "product",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Extremely clean studio product photograph of a completely unbranded matte black modern running shoe on a neutral warm grey seamless background.\n\nThree-quarter product view, shoe centered, realistic proportions and materials, soft large-box studio lighting, subtle contact shadow, premium commercial product photography.\n\nNo logo, no text, no props, no dramatic styling.\n\nVariation 4: slight angle difference.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "e3e9b98e919840d9ab0e502bfc0471b2",
+      "status": "completed",
+      "submitted_at": 1790608817.247117,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/f61d6895-f336-462f-a6a6-4fcefe0d8855.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/f61d6895-f336-462f-a6a6-4fcefe0d8855.png"
+      ],
+      "local": "public/lab/product/product-ref-04.png"
+    },
+    {
+      "id": "character-ref-05",
+      "group": "character",
+      "model": "google/nano-banana-pro/text-to-image",
+      "body": {
+        "prompt": "Contemporary editorial portrait of a fictional 30-year-old female creative director with short dark brown hair, strong eyebrows, subtle freckles, warm olive skin, distinctive slightly asymmetrical smile, understated black clothing.\n\nShe looks intelligent, confident and slightly amused rather than posed.\n\nNatural window light, muted interior, 50mm lens, shallow depth of field, premium editorial photography, subtle film grain, realistic skin texture.\n\nNo glamour retouching, no beauty filter, no text, no logo.\n\nSubtle expression variation 5.",
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "155ce8224ba442a9b3d97bf9777b8f8c",
+      "status": "completed",
+      "submitted_at": 1790608817.3024058,
+      "raw": {
+        "status": "completed",
+        "outputs": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/e1d44da0-191c-4167-a4e1-417ac142a045.png"
+        ],
+        "error": ""
+      },
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/e1d44da0-191c-4167-a4e1-417ac142a045.png"
+      ],
+      "local": "public/lab/character/character-ref-05.png"
+    }
+  ]
+}

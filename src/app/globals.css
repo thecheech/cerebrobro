@@ -278,15 +278,17 @@ h3 {
 }
 
 .lab-stage {
-  display: grid;
-  grid-template-columns: 300px auto;
-  gap: 16px;
+  display: flex;
+  justify-content: center;
   align-items: stretch;
+  gap: 16px;
 }
 
 .lab-side {
   display: flex;
+  flex: none;
   flex-direction: column;
+  width: 300px;
   padding: 24px;
   background: var(--panel);
   border: 1px solid var(--line);
@@ -355,6 +357,7 @@ h3 {
 }
 
 .lab-viz {
+  flex: none;
   aspect-ratio: 4 / 5;
   height: min(78vh, 680px);
   width: auto;
@@ -605,6 +608,14 @@ h3 {
   .steps,
   .about {
     grid-template-columns: 1fr;
+  }
+
+  .lab-stage {
+    flex-direction: column;
+  }
+
+  .lab-side {
+    width: 100%;
   }
 
   .hero {

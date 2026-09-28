@@ -30,9 +30,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(1200px 500px at 80% -10%, #d5e4b855, transparent 55%),
-    linear-gradient(180deg, #eef0eb 0%, var(--paper) 28%, var(--paper) 100%);
+  background: var(--paper);
   color: var(--ink);
   font-family: var(--font-serif), "Source Serif 4", Georgia, serif;
   line-height: 1.5;
@@ -56,11 +54,20 @@ a {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-display), Syne, sans-serif;
   font-weight: 800;
   font-size: 22px;
   letter-spacing: -0.04em;
   text-decoration: none;
+}
+
+.brand-mark {
+  width: 28px;
+  height: 28px;
+  flex: none;
 }
 
 .nav nav {
@@ -80,8 +87,15 @@ a {
 
 .nav-talk {
   color: var(--ink) !important;
-  border-bottom: 2px solid var(--signal);
-  padding-bottom: 2px;
+  background: var(--signal);
+  padding: 9px 14px;
+  font-weight: 700 !important;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.nav-talk:hover {
+  background: var(--ink);
+  color: var(--signal) !important;
 }
 
 .hero {
@@ -97,22 +111,48 @@ a {
 }
 
 .hero-brand {
-  margin: 0 0 28px;
+  margin: 0 0 36px;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.015em;
   font-family: var(--font-syne), Syne, sans-serif;
-  font-size: clamp(48px, 9vw, 96px);
+  font-size: clamp(56px, 12vw, 148px);
   font-weight: 800;
   letter-spacing: -0.07em;
-  line-height: 0.9;
+  line-height: 0.8;
+}
+
+.hero-mark {
+  width: 0.86em;
+  height: 0.86em;
+  flex: none;
+  transform: translateY(0.02em);
+}
+
+.hero-brand span {
+  margin-left: -0.04em;
 }
 
 .eyebrow {
   margin: 0 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-display), Syne, sans-serif;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--mute);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  flex: none;
+  background: var(--signal);
+  outline: 1px solid var(--ink);
 }
 
 .hero h1 {
@@ -129,6 +169,14 @@ a {
   display: block;
   margin-bottom: 0.18em;
   color: color-mix(in srgb, var(--ink) 68%, var(--mute));
+}
+
+.hero h1 mark {
+  background: var(--signal);
+  color: var(--ink);
+  padding: 0 0.08em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .hero-ask {
@@ -159,20 +207,36 @@ a {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  padding: 15px 22px;
-  border-radius: 999px;
+  padding: 16px 24px;
   font-family: var(--font-display), Syne, sans-serif;
-  font-weight: 700;
-  font-size: 15px;
-  background: var(--ink);
-  color: var(--paper);
-  border: 1px solid var(--ink);
-  transition: transform 180ms ease, background 180ms ease;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  background: var(--signal);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  box-shadow: 5px 5px 0 var(--ink);
+  transition: transform 140ms ease, box-shadow 140ms ease;
 }
 
 .button:hover {
-  transform: translateY(-1px);
-  background: #000;
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.button:active {
+  transform: translate(5px, 5px);
+  box-shadow: 0 0 0 var(--ink);
+}
+
+.button-ink {
+  background: var(--ink);
+  color: var(--signal);
+  box-shadow: 5px 5px 0 var(--paper);
+}
+
+.button-ink:hover {
+  box-shadow: 3px 3px 0 var(--paper);
 }
 
 .text-link {
@@ -185,9 +249,26 @@ a {
 }
 
 .hero-still {
+  position: relative;
   margin: 0;
   border-top: 1px solid var(--line);
   padding-top: 28px;
+}
+
+.hero-still::before {
+  content: "Lab · 01";
+  position: absolute;
+  top: 28px;
+  left: 0;
+  z-index: 1;
+  padding: 10px 14px;
+  background: var(--signal);
+  color: var(--ink);
+  font-family: var(--font-display), Syne, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .hero-still img {
@@ -232,16 +313,20 @@ a {
   font-weight: 700;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 10px 14px;
-  border-radius: 999px;
+  padding: 11px 14px;
   cursor: pointer;
   transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
-.machine-tabs button.is-active {
-  background: var(--ink);
+.machine-tabs button:hover {
   border-color: var(--ink);
-  color: var(--paper);
+  color: var(--ink);
+}
+
+.machine-tabs button.is-active {
+  background: var(--signal);
+  border-color: var(--ink);
+  color: var(--ink);
 }
 
 .machine-stage {
@@ -261,12 +346,15 @@ a {
 }
 
 .machine-kicker {
+  align-self: flex-start;
+  padding: 6px 9px;
+  background: var(--signal);
   font-family: var(--font-display), Syne, sans-serif;
   font-size: 11px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--signal);
+  color: var(--ink);
 }
 
 .machine-title {
@@ -376,7 +464,6 @@ a {
 .pulse {
   width: 8px;
   height: 8px;
-  border-radius: 50%;
   background: var(--signal);
   box-shadow: 0 0 0 0 #c6ff3d88;
   animation: ping 1.4s ease-out infinite;
@@ -510,14 +597,23 @@ a {
   gap: 28px;
 }
 
-.method-step span {
-  display: block;
+.method-step {
+  border-top: 2px solid var(--ink);
+  padding-top: 22px;
+}
+
+.block-num {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 22px;
+  background: var(--signal);
   font-family: var(--font-display), Syne, sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--mute);
-  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--ink);
 }
 
 .method-step h3 {
@@ -563,14 +659,28 @@ a {
 .offer-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
+  gap: 0;
+  border: 2px solid var(--ink);
+}
+
+.offer-card {
+  padding: 26px 24px 30px;
+  background: var(--panel);
+}
+
+.offer-card + .offer-card {
+  border-left: 2px solid var(--ink);
+}
+
+.offer-card:last-child {
+  background: var(--signal);
 }
 
 .offer-grid h3 {
-  margin: 0 0 10px;
+  margin: 0 0 14px;
   font-family: var(--font-display), Syne, sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -578,8 +688,12 @@ a {
 .offer-grid p {
   margin: 0;
   color: var(--mute);
-  font-size: 17px;
+  font-size: 18px;
   max-width: 24ch;
+}
+
+.offer-card:last-child p {
+  color: var(--ink);
 }
 
 /* —— POV —— */
@@ -616,11 +730,15 @@ a {
 
 .theatre {
   margin: 0;
+  padding: 0.12em 0.3em 0.18em;
+  background: var(--signal);
   font-family: var(--font-display), Syne, sans-serif;
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 800;
   letter-spacing: -0.04em;
-  color: var(--signal);
+  line-height: 1;
+  color: var(--ink);
+  transform: rotate(-2deg);
 }
 
 .beliefs {
@@ -632,6 +750,9 @@ a {
 }
 
 .beliefs li {
+  display: flex;
+  align-items: baseline;
+  gap: 22px;
   padding: 26px 0;
   border-top: 1px solid #2a2924;
   font-family: var(--font-display), Syne, sans-serif;
@@ -639,7 +760,18 @@ a {
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.15;
-  max-width: 22ch;
+}
+
+.beliefs li::before {
+  content: "";
+  width: 0.5em;
+  height: 0.5em;
+  flex: none;
+  background: var(--signal);
+}
+
+.beliefs li:hover::before {
+  transform: rotate(45deg);
 }
 
 .beliefs li:last-child {
@@ -647,7 +779,7 @@ a {
 }
 
 .theatre-sub {
-  margin: 0 auto;
+  margin: 0 0 0 max(20px, calc((100% - 1280px) / 2));
   color: #9a978c;
   font-size: 17px;
   max-width: 36rem;
@@ -665,6 +797,8 @@ a {
   aspect-ratio: 4 / 5;
   overflow: hidden;
   background: var(--ink);
+  border: 2px solid var(--ink);
+  box-shadow: 14px 14px 0 var(--signal);
 }
 
 .operator-photo img {
@@ -707,35 +841,75 @@ a {
 
 /* —— Invite —— */
 .invite {
-  text-align: center;
-  padding: 110px 0 96px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 120px 0 132px;
+  border-top: none;
+  background: var(--signal);
+}
+
+.invite-mark {
+  position: absolute;
+  right: 3vw;
+  bottom: -18%;
+  width: min(46vw, 680px);
+  height: min(46vw, 680px);
+  pointer-events: none;
+}
+
+.invite-copy {
+  position: relative;
+  width: min(1280px, calc(100% - 40px));
+  margin: 0 auto;
 }
 
 .invite h2 {
-  font-size: clamp(40px, 6vw, 72px);
-  max-width: 12ch;
-  margin: 0 auto 22px;
+  font-size: clamp(44px, 6vw, 88px);
+  max-width: 9ch;
+  margin: 0 0 24px;
 }
 
 .invite p {
-  margin: 0 auto 30px;
-  font-size: 19px;
-  color: var(--mute);
-  max-width: 34rem;
+  margin: 0 0 36px;
+  font-size: 20px;
+  color: var(--ink);
+  max-width: 30rem;
 }
 
 .footer {
+  background: var(--ink);
+  color: #9a978c;
+}
+
+.footer-inner {
   width: min(1280px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 24px 0 40px;
-  border-top: 1px solid var(--line);
+  padding: 28px 0 36px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 12px;
   font-family: var(--font-display), Syne, sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: var(--mute);
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #f2f0ea;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+}
+
+.footer-mark {
+  width: 24px;
+  height: 24px;
 }
 
 .thanks {
@@ -785,6 +959,19 @@ a {
 
   .operator-photo {
     width: min(220px, 55vw);
+  }
+
+  .offer-card + .offer-card {
+    border-left: none;
+    border-top: 2px solid var(--ink);
+  }
+
+  .invite-mark {
+    right: -24vw;
+    bottom: -12%;
+    width: 80vw;
+    height: 80vw;
+    opacity: 0.16;
   }
 
   .hero h1 {

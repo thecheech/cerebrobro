@@ -1,4 +1,6 @@
+import Link from "next/link";
 import { HeroStill, Machine } from "@/components/machine";
+import { Mark } from "@/components/mark";
 import { contactHref, site } from "@/lib/site";
 
 const beliefs = [
@@ -26,13 +28,29 @@ const method = [
   },
 ];
 
+const offer = [
+  {
+    title: "You bring",
+    body: "A brief, workflow, production problem, or client request.",
+  },
+  {
+    title: "We do",
+    body: "Pull it apart, test what's possible, and figure out where AI genuinely helps.",
+  },
+  {
+    title: "You leave with",
+    body: "A working prototype — or a very clear “don't bother.”",
+  },
+];
+
 export default function Home() {
   return (
     <div className="page">
       <header className="nav">
-        <a className="brand" href="/">
+        <Link className="brand" href="/">
+          <Mark className="brand-mark" />
           {site.name}
-        </a>
+        </Link>
         <nav aria-label="Primary">
           <a href="#work">Work</a>
           <a href="#pov">POV</a>
@@ -46,11 +64,14 @@ export default function Home() {
       <main>
         <section className="hero">
           <div className="hero-copy">
-            <p className="hero-brand">{site.name}</p>
+            <p className="hero-brand" aria-label={site.name}>
+              <Mark className="hero-mark" />
+              <span aria-hidden="true">erebroBro</span>
+            </p>
             <p className="eyebrow">You&apos;re already playing with AI.</p>
             <h1>
               <span>Your agency has enough AI experiments.</span>
-              Show me something your team hates making.
+              Show me something your team <mark>hates making.</mark>
             </h1>
             <p className="lede">
               We find the creative workflows where AI can actually save your
@@ -85,7 +106,7 @@ export default function Home() {
           <div className="method-list">
             {method.map((step) => (
               <div key={step.num} className="method-step">
-                <span>{step.num}</span>
+                <span className="block-num">{step.num}</span>
                 <h3>{step.title}</h3>
                 <p>{step.body}</p>
               </div>
@@ -108,26 +129,12 @@ export default function Home() {
               workflow.
             </p>
             <div className="offer-grid">
-              <div>
-                <h3>You bring</h3>
-                <p>
-                  A brief, workflow, production problem, or client request.
-                </p>
-              </div>
-              <div>
-                <h3>We do</h3>
-                <p>
-                  Pull it apart, test what&apos;s possible, and figure out where
-                  AI genuinely helps.
-                </p>
-              </div>
-              <div>
-                <h3>You leave with</h3>
-                <p>
-                  A working prototype — or a very clear &ldquo;don&apos;t
-                  bother.&rdquo;
-                </p>
-              </div>
+              {offer.map((item) => (
+                <div key={item.title} className="offer-card">
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -180,20 +187,28 @@ export default function Home() {
         </section>
 
         <section className="invite" id="contact">
-          <h2>Show me something your team hates making.</h2>
-          <p>
-            20 minutes. No AI theatre. If I don&apos;t think AI can help,
-            I&apos;ll tell you.
-          </p>
-          <a className="button" href={contactHref}>
-            Talk to Koby
-          </a>
+          <Mark className="invite-mark" plate="transparent" />
+          <div className="invite-copy">
+            <h2>Show me something your team hates making.</h2>
+            <p>
+              20 minutes. No AI theatre. If I don&apos;t think AI can help,
+              I&apos;ll tell you.
+            </p>
+            <a className="button button-ink" href={contactHref}>
+              Talk to Koby
+            </a>
+          </div>
         </section>
       </main>
 
       <footer className="footer">
-        <span>{site.name}</span>
-        <span>Built by Koby.</span>
+        <div className="footer-inner">
+          <span className="footer-brand">
+            <Mark className="footer-mark" />
+            {site.name}
+          </span>
+          <span>Built by Koby.</span>
+        </div>
       </footer>
     </div>
   );

@@ -49,13 +49,16 @@ export default function Home() {
             <p className="hero-brand">{site.name}</p>
             <p className="eyebrow">You&apos;re already playing with AI.</p>
             <h1>
-              Your agency has enough AI experiments.
-              <span> Let&apos;s make one actually useful.</span>
+              <span>Your agency has enough AI experiments.</span>
+              Show me something your team hates making.
             </h1>
             <p className="lede">
-              I build and operate AI image and video products. CerebroBro is
-              where I apply that experience to the messy, expensive stuff
-              creative teams actually have to ship.
+              We find the creative workflows where AI can actually save your
+              team time, money, or production pain.
+            </p>
+            <p className="hero-ask">
+              I&apos;ll spend 20 minutes figuring out whether AI can actually
+              make it better.
             </p>
             <div className="actions">
               <a className="button" href={contactHref}>
@@ -65,9 +68,6 @@ export default function Home() {
                 Show me the work →
               </a>
             </div>
-            <p className="cta-note">
-              20 min. Bring me something you&apos;re struggling to make.
-            </p>
           </div>
 
           <HeroStill />
@@ -94,32 +94,40 @@ export default function Home() {
         </section>
 
         <section className="offer" id="offer">
-          <p className="eyebrow">The offer</p>
-          <h2>Bring me something annoying.</h2>
-          <p className="lede">
-            60–90 minutes. One real workflow. One real problem. We figure out
-            whether AI can actually improve it.
-          </p>
-          <div className="offer-grid">
-            <div>
-              <h3>You bring</h3>
-              <p>
-                A brief, workflow, production problem, or client request.
-              </p>
-            </div>
-            <div>
-              <h3>We do</h3>
-              <p>
-                Pull it apart, test what&apos;s possible, and figure out where
-                AI genuinely helps.
-              </p>
-            </div>
-            <div>
-              <h3>You leave with</h3>
-              <p>
-                A working prototype — or a very clear &ldquo;don&apos;t
-                bother.&rdquo;
-              </p>
+          <div className="offer-step">
+            <p className="eyebrow">20 min — first conversation</p>
+            <h2>Bring me the annoying thing.</h2>
+            <p className="lede">
+              We&apos;ll figure out whether it&apos;s worth exploring.
+            </p>
+          </div>
+          <div className="offer-step offer-step-next">
+            <p className="eyebrow">If there&apos;s something worth building</p>
+            <p className="lede">
+              We run a focused 60–90 minute working session around one real
+              workflow.
+            </p>
+            <div className="offer-grid">
+              <div>
+                <h3>You bring</h3>
+                <p>
+                  A brief, workflow, production problem, or client request.
+                </p>
+              </div>
+              <div>
+                <h3>We do</h3>
+                <p>
+                  Pull it apart, test what&apos;s possible, and figure out where
+                  AI genuinely helps.
+                </p>
+              </div>
+              <div>
+                <h3>You leave with</h3>
+                <p>
+                  A working prototype — or a very clear &ldquo;don&apos;t
+                  bother.&rdquo;
+                </p>
+              </div>
             </div>
           </div>
         </section>

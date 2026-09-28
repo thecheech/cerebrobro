@@ -118,16 +118,25 @@ a {
 .hero h1 {
   margin: 0 0 24px;
   font-family: var(--font-display), Syne, sans-serif;
-  font-size: clamp(40px, 7vw, 78px);
+  font-size: clamp(40px, 6.2vw, 72px);
   font-weight: 800;
   line-height: 0.95;
   letter-spacing: -0.055em;
-  max-width: 14ch;
+  max-width: 16ch;
 }
 
 .hero h1 span {
   display: block;
-  color: color-mix(in srgb, var(--ink) 72%, var(--mute));
+  margin-bottom: 0.18em;
+  color: color-mix(in srgb, var(--ink) 68%, var(--mute));
+}
+
+.hero-ask {
+  margin: -6px 0 28px;
+  max-width: 34rem;
+  font-size: clamp(17px, 1.8vw, 20px);
+  line-height: 1.4;
+  color: var(--ink);
 }
 
 .lede {
@@ -173,12 +182,6 @@ a {
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
-}
-
-.cta-note {
-  margin: 16px 0 0;
-  font-size: 14px;
-  color: var(--mute);
 }
 
 .hero-still {
@@ -542,8 +545,19 @@ a {
   margin-bottom: 18px;
 }
 
-.offer > .lede {
-  margin-bottom: 42px;
+.offer-step + .offer-step {
+  margin-top: 48px;
+  padding-top: 48px;
+  border-top: 1px solid var(--line);
+}
+
+.offer-step .lede {
+  max-width: 36rem;
+  margin-bottom: 0;
+}
+
+.offer-step-next .lede {
+  margin-bottom: 36px;
 }
 
 .offer-grid {

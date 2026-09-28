@@ -2,7 +2,7 @@ export const site = {
   name: "CerebroBro",
   title: "CerebroBro — AI that works in production",
   description:
-    "I've been building and operating AI image and video products. CerebroBro is where I apply that to the messy, expensive work creative teams actually ship.",
+    "Your agency has enough AI experiments. Show me something your team hates making — 20 minutes to see whether AI can actually make it better.",
 };
 
 export const contactEmail = "koby@cerebrobro.com";

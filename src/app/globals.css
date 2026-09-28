@@ -279,11 +279,14 @@ h3 {
 
 .lab-stage {
   display: grid;
-  grid-template-columns: 340px 1fr;
+  grid-template-columns: 300px auto;
   gap: 16px;
+  align-items: stretch;
 }
 
 .lab-side {
+  display: flex;
+  flex-direction: column;
   padding: 24px;
   background: var(--panel);
   border: 1px solid var(--line);
@@ -304,7 +307,8 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
-  margin-top: 24px;
+  margin-top: auto;
+  padding-top: 24px;
 }
 
 .lab-thumbs button {
@@ -351,8 +355,10 @@ h3 {
 }
 
 .lab-viz {
-  height: min(78vh, 700px);
-  min-height: 420px;
+  aspect-ratio: 4 / 5;
+  height: min(78vh, 680px);
+  width: auto;
+  max-width: 100%;
   background: #161613;
   overflow: hidden;
 }
@@ -622,8 +628,9 @@ h3 {
   }
 
   .lab-viz {
-    height: 62vh;
-    min-height: 320px;
+    width: 100%;
+    height: auto;
+    max-height: none;
   }
 
   .about-photo {

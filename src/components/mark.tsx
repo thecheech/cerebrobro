@@ -25,3 +25,25 @@ export function Mark({
     </svg>
   );
 }
+
+interface WordmarkProps {
+  className?: string;
+  markClassName?: string;
+  size?: "nav" | "hero" | "footer";
+}
+
+/** Block mark replaces the leading C — never Mark + "CerebroBro". */
+export function Wordmark({
+  className,
+  markClassName,
+  size = "nav",
+}: WordmarkProps) {
+  return (
+    <span className={className ?? `wordmark wordmark-${size}`}>
+      <Mark className={markClassName ?? `wordmark-mark wordmark-mark-${size}`} />
+      <span className="wordmark-rest" aria-hidden="true">
+        erebroBro
+      </span>
+    </span>
+  );
+}

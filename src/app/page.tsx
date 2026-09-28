@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { HeroStill, Machine } from "@/components/machine";
-import { Mark } from "@/components/mark";
+import { Mark, Wordmark } from "@/components/mark";
 import { contactHref, site } from "@/lib/site";
 
 const beliefs = [
@@ -47,16 +47,15 @@ export default function Home() {
   return (
     <div className="page">
       <header className="nav">
-        <Link className="brand" href="/">
-          <Mark className="brand-mark" />
-          {site.name}
+        <Link className="brand" href="/" aria-label={site.name}>
+          <Wordmark size="nav" />
         </Link>
         <nav aria-label="Primary">
           <a href="#work">Work</a>
           <a href="#pov">POV</a>
           <a href="#koby">Koby</a>
           <a className="nav-talk" href={contactHref}>
-            Talk
+            Talk to Koby
           </a>
         </nav>
       </header>
@@ -65,30 +64,26 @@ export default function Home() {
         <section className="hero">
           <div className="hero-copy">
             <p className="hero-brand" aria-label={site.name}>
-              <Mark className="hero-mark" />
-              <span aria-hidden="true">erebroBro</span>
+              <Wordmark size="hero" />
             </p>
             <p className="eyebrow">You&apos;re already playing with AI.</p>
             <h1>
               <span>Your agency has enough AI experiments.</span>
               Show me something your team <mark>hates making.</mark>
             </h1>
-            <p className="lede">
-              We find the creative workflows where AI can actually save your
-              team time, money, or production pain.
-            </p>
-            <p className="hero-ask">
-              I&apos;ll spend 20 minutes figuring out whether AI can actually
-              make it better.
-            </p>
             <div className="actions">
-              <a className="button" href={contactHref}>
+              <a className="button button-hero" href={contactHref}>
                 Talk to Koby
+                <span className="button-meta">20 min</span>
               </a>
               <a className="text-link" href="#work">
                 Show me the work →
               </a>
             </div>
+            <p className="hero-ask">
+              We find the creative workflows where AI can actually save your
+              team time, money, or production pain.
+            </p>
           </div>
 
           <HeroStill />
@@ -203,9 +198,8 @@ export default function Home() {
 
       <footer className="footer">
         <div className="footer-inner">
-          <span className="footer-brand">
-            <Mark className="footer-mark" />
-            {site.name}
+          <span className="footer-brand" aria-label={site.name}>
+            <Wordmark size="footer" />
           </span>
           <span>Built by Koby.</span>
         </div>

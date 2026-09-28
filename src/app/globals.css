@@ -47,7 +47,7 @@ a {
 .nav {
   width: min(1280px, calc(100% - 40px));
   margin: 0 auto;
-  height: 72px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,7 +56,6 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
   font-family: var(--font-display), Syne, sans-serif;
   font-weight: 800;
   font-size: 22px;
@@ -64,10 +63,40 @@ a {
   text-decoration: none;
 }
 
-.brand-mark {
-  width: 28px;
-  height: 28px;
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.18em;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: 1;
+}
+
+.wordmark-mark {
   flex: none;
+  display: block;
+}
+
+.wordmark-mark-nav,
+.wordmark-mark-footer {
+  width: 1em;
+  height: 1em;
+}
+
+.wordmark-mark-hero {
+  width: 0.82em;
+  height: 0.82em;
+}
+
+.wordmark-rest {
+  display: block;
+  transform: translateY(0.02em);
+}
+
+.wordmark-hero {
+  gap: 0.08em;
+  align-items: center;
 }
 
 .nav nav {
@@ -88,53 +117,49 @@ a {
 .nav-talk {
   color: var(--ink) !important;
   background: var(--signal);
-  padding: 9px 14px;
-  font-weight: 700 !important;
-  transition: background 160ms ease, color 160ms ease;
+  border: 2px solid var(--ink);
+  padding: 8px 14px;
+  font-weight: 800 !important;
+  box-shadow: 3px 3px 0 var(--ink);
+  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease,
+    color 140ms ease;
 }
 
 .nav-talk:hover {
   background: var(--ink);
   color: var(--signal) !important;
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px 0 var(--ink);
 }
 
 .hero {
   width: min(1280px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 28px 0 72px;
+  padding: 18px 0 64px;
   display: grid;
-  gap: 48px;
+  gap: 40px;
 }
 
 .hero-copy {
-  max-width: 920px;
+  max-width: 820px;
 }
 
 .hero-brand {
-  margin: 0 0 36px;
-  display: flex;
-  align-items: flex-end;
-  gap: 0.015em;
+  margin: 0 0 20px;
   font-family: var(--font-syne), Syne, sans-serif;
-  font-size: clamp(56px, 12vw, 148px);
+  font-size: clamp(44px, 7.5vw, 88px);
   font-weight: 800;
   letter-spacing: -0.07em;
-  line-height: 0.8;
+  line-height: 0.9;
 }
 
-.hero-mark {
-  width: 0.86em;
-  height: 0.86em;
-  flex: none;
-  transform: translateY(0.02em);
-}
-
-.hero-brand span {
-  margin-left: -0.04em;
+.hero-brand .wordmark {
+  gap: 0.1em;
+  align-items: center;
 }
 
 .eyebrow {
-  margin: 0 0 18px;
+  margin: 0 0 12px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -156,18 +181,18 @@ a {
 }
 
 .hero h1 {
-  margin: 0 0 24px;
+  margin: 0 0 22px;
   font-family: var(--font-display), Syne, sans-serif;
-  font-size: clamp(40px, 6.2vw, 72px);
+  font-size: clamp(26px, 3.2vw, 40px);
   font-weight: 800;
-  line-height: 0.95;
-  letter-spacing: -0.055em;
-  max-width: 16ch;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  max-width: 28ch;
 }
 
 .hero h1 span {
   display: block;
-  margin-bottom: 0.18em;
+  margin-bottom: 0.12em;
   color: color-mix(in srgb, var(--ink) 68%, var(--mute));
 }
 
@@ -180,11 +205,11 @@ a {
 }
 
 .hero-ask {
-  margin: -6px 0 28px;
-  max-width: 34rem;
-  font-size: clamp(17px, 1.8vw, 20px);
-  line-height: 1.4;
-  color: var(--ink);
+  margin: 18px 0 0;
+  max-width: 36rem;
+  font-size: 17px;
+  line-height: 1.45;
+  color: var(--mute);
 }
 
 .lede {
@@ -199,13 +224,14 @@ a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 18px 24px;
+  gap: 16px 22px;
 }
 
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 12px;
   text-decoration: none;
   padding: 16px 24px;
   font-family: var(--font-display), Syne, sans-serif;
@@ -219,9 +245,31 @@ a {
   transition: transform 140ms ease, box-shadow 140ms ease;
 }
 
+.button-hero {
+  padding: 18px 26px;
+  font-size: 18px;
+  box-shadow: 6px 6px 0 var(--ink);
+}
+
+.button-meta {
+  display: inline-grid;
+  place-items: center;
+  padding: 4px 8px;
+  background: var(--ink);
+  color: var(--signal);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .button:hover {
   transform: translate(2px, 2px);
   box-shadow: 3px 3px 0 var(--ink);
+}
+
+.button-hero:hover {
+  box-shadow: 4px 4px 0 var(--ink);
 }
 
 .button:active {
@@ -898,18 +946,10 @@ a {
 }
 
 .footer-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
   color: #f2f0ea;
   font-weight: 800;
   font-size: 16px;
   letter-spacing: -0.03em;
-}
-
-.footer-mark {
-  width: 24px;
-  height: 24px;
 }
 
 .thanks {
@@ -933,6 +973,36 @@ a {
   font-size: 19px;
   color: var(--mute);
   max-width: 36rem;
+}
+
+@media (max-height: 860px) and (min-width: 901px) {
+  .nav {
+    height: 56px;
+  }
+
+  .hero {
+    padding-top: 8px;
+  }
+
+  .hero-brand {
+    margin-bottom: 14px;
+    font-size: clamp(40px, 6vw, 72px);
+  }
+
+  .hero h1 {
+    margin-bottom: 16px;
+    font-size: clamp(24px, 2.8vw, 34px);
+  }
+
+  .hero-ask {
+    margin-top: 14px;
+    font-size: 15px;
+  }
+
+  .button-hero {
+    padding: 15px 22px;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 900px) {

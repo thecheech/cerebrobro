@@ -1,114 +1,217 @@
-import { BookLink } from "@/components/book-link";
-import { site } from "@/lib/site";
+import { Machine } from "@/components/machine";
+import { contactHref, site } from "@/lib/site";
 
-const path = [
-  "Brief",
-  "Reference images",
-  "Generations",
-  "Select",
-  "Client deliverable",
+const situations = [
+  {
+    num: "01",
+    title: "The client wants 50 assets.",
+    body: "Product variations. Background changes. Formats. Localizations. Three rounds of feedback.",
+    note: "This is where I'd look for automation.",
+  },
+  {
+    num: "02",
+    title: "The creative director wants 30 directions.",
+    body: "Not one more moodboard meeting. Actual exploration you can put in front of a client.",
+    note: "This is where I'd look for leverage.",
+  },
+  {
+    num: "03",
+    title: "The client wants something that doesn't exist yet.",
+    body: "A character. A world. A product still in development. Something you can't shoot tomorrow.",
+    note: "This is where I'd prototype first.",
+  },
 ];
 
-const ctaClass =
-  "inline-flex items-center justify-center bg-foreground px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-accent";
+const beliefs = [
+  "Most AI-generated advertising still looks like AI-generated advertising.",
+  "The model isn't usually the bottleneck.",
+  "Don't automate mediocre creative.",
+  "Don't build an AI department before you've found something worth scaling.",
+  "The best AI workflow is the one your team actually uses.",
+];
+
+const method = [
+  {
+    num: "01",
+    title: "Show me the work",
+    body: "What are you actually trying to make?",
+  },
+  {
+    num: "02",
+    title: "Let's break it",
+    body: "Where does the current process suck?",
+  },
+  {
+    num: "03",
+    title: "Make one thing better",
+    body: "We build the smallest useful workflow and test it on real work.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="mx-auto flex min-h-full w-full max-w-3xl flex-col px-6 py-8 sm:px-10 sm:py-12">
-      <header className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-3 border-b border-line pb-5">
-        <a href="#top" className="text-sm font-medium tracking-wide">
+    <div className="page">
+      <header className="nav">
+        <a className="brand" href="/">
           {site.name}
         </a>
-        <nav className="flex flex-wrap items-baseline gap-x-5 gap-y-2 text-sm">
-          <a href="#work" className="text-muted">
-            What we do
+        <nav aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#pov">POV</a>
+          <a href="#koby">Koby</a>
+          <a className="nav-talk" href={contactHref}>
+            Talk
           </a>
-          <a href="#about" className="text-muted">
-            About
-          </a>
-          <BookLink className="font-medium">Talk to Koby</BookLink>
         </nav>
       </header>
 
-      <main id="top" className="flex flex-col">
-        <section className="border-b border-line py-14 sm:py-20">
-          <p className="text-sm text-accent">AI systems for creative production.</p>
-          <p className="mt-8 text-sm text-muted">
-            You&apos;re already experimenting with AI.
-          </p>
-          <h1 className="mt-3 max-w-2xl font-serif text-4xl leading-[1.15] font-medium tracking-tight sm:text-5xl sm:leading-[1.12]">
-            You don&apos;t need another AI workshop. You need AI that works in
-            production.
-          </h1>
-          <p className="mt-6 max-w-xl text-lg leading-8">
-            If your team is experimenting with Midjourney, Flux, Runway, Kling,
-            Veo, or whatever shipped last week, I can help you figure out what
-            is actually worth putting into production.
-          </p>
+      <main>
+        <section className="hero">
+          <div className="hero-copy">
+            <p className="hero-brand">{site.name}</p>
+            <p className="eyebrow">You&apos;re already playing with AI.</p>
+            <h1>
+              Your agency has enough AI experiments.
+              <span> Let&apos;s make one actually useful.</span>
+            </h1>
+            <p className="lede">
+              I build and operate AI image and video products. CerebroBro is
+              where I take that experience and apply it to the messy, expensive
+              stuff creative teams actually have to ship.
+            </p>
+            <div className="actions">
+              <a className="button" href={contactHref}>
+                Talk to Koby
+              </a>
+              <a className="text-link" href="#work">
+                Show me the work →
+              </a>
+            </div>
+            <p className="cta-note">
+              20 min. Bring me something you&apos;re struggling to make.
+            </p>
+          </div>
 
-          <ol className="mt-10 grid gap-px bg-line sm:grid-cols-5">
-            {path.map((step, index) => (
-              <li key={step} className="bg-background px-3 py-4">
-                <span className="font-serif text-sm text-accent">0{index + 1}</span>
-                <p className="mt-2 text-sm leading-5">{step}</p>
-              </li>
+          <Machine />
+        </section>
+
+        <section className="situations" id="start">
+          <div className="section-head">
+            <h2>Here&apos;s where I&apos;d start.</h2>
+          </div>
+          <div className="situation-list">
+            {situations.map((item) => (
+              <article key={item.num} className="situation">
+                <div className="situation-num">{item.num}</div>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                  <p className="situation-note">{item.note}</p>
+                </div>
+              </article>
             ))}
-          </ol>
-
-          <div className="mt-10">
-            <BookLink className={ctaClass}>Talk to Koby →</BookLink>
-            <p className="mt-3 text-sm text-muted">20 minutes. No sales deck.</p>
           </div>
         </section>
 
-        <section
-          id="about"
-          className="grid scroll-mt-8 gap-6 border-b border-line py-14 sm:grid-cols-[10rem_1fr] sm:py-16"
-        >
-          <h2 className="text-sm text-muted">About</h2>
-          <div className="max-w-xl space-y-5 text-lg leading-8">
-            <p>
-              I&apos;m Koby Karp. I&apos;ve spent the last several years building
-              and operating AI image and video products, from the models and the
-              infrastructure to how the work gets found and paid for.
-            </p>
-            <p>I&apos;m not here to teach your team what ChatGPT is.</p>
+        <section className="method" id="method">
+          <div className="method-intro">
+            <h2>I don&apos;t start with the model.</h2>
+            <p>Don&apos;t show me your AI stack. Show me what you&apos;re trying to make.</p>
+          </div>
+          <div className="method-list">
+            {method.map((step) => (
+              <div key={step.num} className="method-step">
+                <span>{step.num}</span>
+                <h3>{step.title}</h3>
+                <p>{step.body}</p>
+              </div>
+            ))}
           </div>
         </section>
 
-        <section
-          id="work"
-          className="grid scroll-mt-8 gap-6 border-b border-line py-14 sm:grid-cols-[10rem_1fr] sm:py-16"
-        >
-          <h2 className="text-sm text-muted">What we do</h2>
-          <div className="max-w-xl space-y-5 text-lg leading-8">
+        <section className="offer" id="offer">
+          <p className="eyebrow">The offer</p>
+          <h2>Bring me something annoying.</h2>
+          <p className="lede">
+            60–90 minutes. One real workflow. One real problem. We figure out
+            whether AI can actually improve it.
+          </p>
+          <div className="offer-grid">
+            <div>
+              <h3>You bring</h3>
+              <p>
+                A brief, workflow, production problem, or client request.
+              </p>
+            </div>
+            <div>
+              <h3>We do</h3>
+              <p>
+                Pull it apart, test what&apos;s possible, and figure out where
+                AI genuinely helps.
+              </p>
+            </div>
+            <div>
+              <h3>You leave with</h3>
+              <p>
+                A working prototype — or a very clear &ldquo;don&apos;t
+                bother.&rdquo;
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="pov" id="pov">
+          <div className="pov-head">
+            <h2>Things I believe</h2>
+            <p className="theatre">No AI theatre.</p>
+          </div>
+          <ul className="beliefs">
+            {beliefs.map((line) => (
+              <li key={line}>{line}</li>
+            ))}
+          </ul>
+          <p className="theatre-sub">
+            No innovation workshops where everyone leaves excited and nothing
+            ships.
+          </p>
+        </section>
+
+        <section className="operator" id="koby">
+          <div className="operator-mark" aria-hidden="true">
+            KK
+          </div>
+          <div className="operator-copy">
+            <p className="eyebrow">The operator</p>
+            <h2>I&apos;m Koby.</h2>
             <p>
-              You already have someone making frames. A client is going to ask
-              you to do it on a job. The question is whether you can brief it,
-              review it, price it, and do it again next month.
+              I&apos;ve spent the last few years building and running AI image
+              and video products. I&apos;ve dealt with the models, APIs, GPUs,
+              costs, users, shitty generations and everything else that happens
+              between &ldquo;cool demo&rdquo; and &ldquo;this actually
+              works.&rdquo;
             </p>
             <p>
-              On the call we look at one client ask. If there&apos;s a line worth
-              installing, I send a proposal the same day. Two weeks. $5,000, or
-              $7,500 when the review bar or the client makes it heavier. I stay
-              through one live job. Then your producers run it.
+              CerebroBro is the consulting practice that comes out of that —
+              not a deck about the future of creativity.
             </p>
           </div>
         </section>
 
-        <section id="talk" className="scroll-mt-8 py-14 sm:py-16">
-          <h2 className="max-w-xl font-serif text-3xl leading-tight font-medium sm:text-4xl">
-            Talk to Koby.
-          </h2>
-          <p className="mt-4 text-lg text-muted">20 minutes. No sales deck.</p>
-          <div className="mt-8">
-            <BookLink className={ctaClass}>Talk to Koby →</BookLink>
-          </div>
+        <section className="invite" id="contact">
+          <h2>Show me something your team hates making.</h2>
+          <p>
+            20 minutes. No AI theatre. If I don&apos;t think AI can help,
+            I&apos;ll tell you.
+          </p>
+          <a className="button" href={contactHref}>
+            Talk to Koby
+          </a>
         </section>
       </main>
 
-      <footer className="mt-auto border-t border-line pt-6 text-sm text-muted">
-        Koby Karp
+      <footer className="footer">
+        <span>{site.name}</span>
+        <span>Built by Koby Karp.</span>
       </footer>
     </div>
   );

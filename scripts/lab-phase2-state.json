@@ -1,0 +1,277 @@
+{
+  "items": [
+    {
+      "id": "world-studio-night",
+      "group": "worlds",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact shoe from the reference image unchanged.\n\nPlace it in a dark contemporary photo studio on a matte charcoal seamless, lit by one large softbox from camera-left and a thin rim light. Quiet, expensive, almost surgical product photography.\n\nPhotorealistic. No props, no logos, no text, no neon cyber aesthetic.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/106e4ced-de84-4e71-8e30-a3ba12bce23f.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "f50bc86479be45f0ba3243583221f7a8",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/5bc0351e-0866-46ff-a9f9-2d5456bd69b7.png"
+      ],
+      "local": "public/lab/worlds/world-studio-night.png"
+    },
+    {
+      "id": "char-workspace",
+      "group": "scenes",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep this person's identity, facial structure, hair, skin tone, freckles, and distinctive features exactly consistent with the reference.\n\nShe is in a quiet creative studio reviewing printed stills pinned to a wall, natural window light, observational documentary style.\n\nDo not change her identity. No text, no logo, no AI interface graphics.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/01731081-a2a4-4b6b-a06a-f477483ba9da.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "e4f94ba5aca347bfba55ffbc5b35995f",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/70a3a682-97a2-48c1-96ea-f05a141c8174.png"
+      ],
+      "local": "public/lab/scenes/char-workspace.png"
+    },
+    {
+      "id": "world-rain-city",
+      "group": "worlds",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact shoe from the reference image unchanged.\n\nPlace it on wet asphalt at night under a soft streetlamp, shallow puddle reflections, distant city bokeh. Cinematic but quiet \u2014 like a still from a prestige sports commercial.\n\nPhotorealistic materials. No logos, no text, no dystopian cyberpunk.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/106e4ced-de84-4e71-8e30-a3ba12bce23f.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "ed103777154e427f9dca99f0ef83393d",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/825a94dd-4c11-4785-bf83-1e4a10687c86.png"
+      ],
+      "local": "public/lab/worlds/world-rain-city.png"
+    },
+    {
+      "id": "char-cafe",
+      "group": "scenes",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep this person's identity, facial structure, hair, skin tone, freckles, and distinctive features exactly consistent with the reference.\n\nShe sits at a small cafe table early morning, looking through a notebook. Soft window light, candid moment, 50mm editorial photography.\n\nDo not change her identity. No text, no logo, no beauty filter.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/01731081-a2a4-4b6b-a06a-f477483ba9da.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "6faa1f11cf60495c821998d1cccb59f4",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/01113048-aa51-4743-886c-22051fc2cfba.png"
+      ],
+      "local": "public/lab/scenes/char-cafe.png"
+    },
+    {
+      "id": "char-museum",
+      "group": "scenes",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep this person's identity, facial structure, hair, skin tone, freckles, and distinctive features exactly consistent with the reference.\n\nShe is walking through a brutalist art museum, charcoal jacket, looking slightly aside. Natural afternoon light. Editorial campaign photography, realistic proportions, candid expression.\n\nDo not beautify or change her identity. No text, no logo.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/01731081-a2a4-4b6b-a06a-f477483ba9da.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "b1cd12d5f95b401882a97e7a453852b8",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/16607460-86f1-45bf-9d61-510ee4c46b9a.png"
+      ],
+      "local": "public/lab/scenes/char-museum.png"
+    },
+    {
+      "id": "world-desert",
+      "group": "worlds",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact shoe from the reference image unchanged.\n\nPlace it on a sculptural sandstone formation in a vast desert at sunrise. Fine wind-blown dust, enormous empty sky, warm orange light, long shadows, subtle haze.\n\nPremium outdoor campaign photography. Photorealistic, sophisticated, restrained. No logos, no text.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/106e4ced-de84-4e71-8e30-a3ba12bce23f.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "818ffb9d8f5c420cb2406e32e618db70",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/819035e3-fa4e-4b55-a201-001fa83a19d4.png"
+      ],
+      "local": "public/lab/worlds/world-desert.png"
+    },
+    {
+      "id": "world-liquid",
+      "group": "worlds",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact shoe from the reference image unchanged.\n\nPlace it on a narrow black platform above a calm dark reflective water surface. A sculptural sheet of water rises behind it, frozen mid-wave, physically believable.\n\nLuxury sports advertising photography, dramatic but restrained, realistic physics. No logos, no text, no surreal melting.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/106e4ced-de84-4e71-8e30-a3ba12bce23f.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "eb4fed1f3ebb48549fab5d13f532249a",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/e185ec44-abd3-47ae-9d54-7ce47bba1388.png"
+      ],
+      "local": "public/lab/worlds/world-liquid.png"
+    },
+    {
+      "id": "char-coast",
+      "group": "scenes",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep this person's identity, facial structure, hair, skin tone, freckles, and distinctive features exactly consistent with the reference.\n\nShe stands on a windswept coastal cliff at golden hour in a dark oversized coat. Cinematic editorial campaign photography.\n\nDo not change her identity. No text, no logo.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/01731081-a2a4-4b6b-a06a-f477483ba9da.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "ccbe14246609414eb5f2e7474d560bda",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/4db5a195-8dcd-4280-b5a6-1171710d7db2.png"
+      ],
+      "local": "public/lab/scenes/char-coast.png"
+    },
+    {
+      "id": "world-alpine",
+      "group": "worlds",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact shoe from the reference image \u2014 identical shape, proportions, materials, and silhouette. Do not redesign it.\n\nPlace that same shoe on a massive pale granite rock above a fog-filled alpine valley at dawn. Cold morning atmosphere, low golden sunlight through clouds, subtle frost on surrounding surfaces only \u2014 not on the shoe upper.\n\nPremium outdoor advertising photography. Photorealistic. Believable materials and lighting. Restrained color, no fantasy glow, no logos, no text, no UI.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/106e4ced-de84-4e71-8e30-a3ba12bce23f.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "269d0cc2876d42f4a2a285baa0d9d6cf",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/7f6e126c-762a-4be7-971e-b380fe1847ac.png"
+      ],
+      "local": "public/lab/worlds/world-alpine.png"
+    },
+    {
+      "id": "world-brutalist",
+      "group": "worlds",
+      "model": "google/nano-banana-pro/edit",
+      "ext": "png",
+      "body": {
+        "prompt": "Keep the exact shoe from the reference image unchanged \u2014 same shape, proportions, materials.\n\nPlace it inside a monumental brutalist concrete interior with huge geometric walls and stairs. Strong afternoon sun, long architectural shadows, warm grey concrete, subtle haze.\n\nHigh-end contemporary advertising photography. Photorealistic. Minimal composition. No logos, no text, no CGI look.",
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/106e4ced-de84-4e71-8e30-a3ba12bce23f.png"
+        ],
+        "aspect_ratio": "4:5",
+        "resolution": "2k",
+        "output_format": "png"
+      },
+      "prediction_id": "fc630eb55fac460ea2f1566d415c18bc",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/output/92cdc6a0-ec6e-4686-8415-e40ad3be15ee.png"
+      ],
+      "local": "public/lab/worlds/world-brutalist.png"
+    },
+    {
+      "id": "motion-character",
+      "group": "motion",
+      "model": "google/veo3.1/reference-to-video",
+      "ext": "mp4",
+      "body": {
+        "images": [
+          "https://d2h7xmz5gqybh9.cloudfront.net/output/01731081-a2a4-4b6b-a06a-f477483ba9da.png"
+        ],
+        "prompt": "The woman slowly turns her head toward the camera and gives a very subtle natural smile. Hair moves slightly. The camera performs a slow cinematic push-in. Natural human movement, realistic facial motion, subtle breathing, realistic fabric movement. Premium editorial fashion film. Quiet, restrained, observational. Preserve her identity and facial features exactly.",
+        "negative_prompt": "morphing, warping, melting, object deformation, changing product shape, abrupt camera cuts, flickering, artificial motion, CGI look, text, logos, extra limbs, distorted faces, oversharpened, plastic skin",
+        "resolution": "1080p",
+        "generate_audio": false
+      },
+      "prediction_id": "45239e45455a4a6cadd28909e584297a",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/predictions/45239e45455a4a6cadd28909e584297a/1.mp4"
+      ],
+      "local": "public/lab/motion/motion-character.mp4"
+    },
+    {
+      "id": "motion-hero-parallax",
+      "group": "motion",
+      "model": "google/veo3.1/image-to-video",
+      "ext": "mp4",
+      "body": {
+        "image": "https://d2h7xmz5gqybh9.cloudfront.net/output/6d934f2b-148b-45aa-9b30-cffaed069dec.png",
+        "prompt": "The camera slowly arcs a few degrees around the product from left to right while keeping exact product proportions. Environment stays physically stable. Fine atmospheric particles move naturally. Background fabric gently responds to a soft breeze. Subtle cinematic parallax, realistic depth, premium commercial product film. No product deformation. No camera shake. No sudden movement.",
+        "negative_prompt": "morphing, warping, melting, object deformation, changing product shape, abrupt camera cuts, flickering, artificial motion, CGI look, text, logos, extra limbs, distorted faces, oversharpened, plastic skin",
+        "aspect_ratio": "16:9",
+        "duration": 8,
+        "resolution": "1080p",
+        "generate_audio": false
+      },
+      "prediction_id": "6e754907d9f4483a8e014a05fe9f177d",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/predictions/6e754907d9f4483a8e014a05fe9f177d/1.mp4"
+      ],
+      "local": "public/lab/motion/motion-hero-parallax.mp4"
+    },
+    {
+      "id": "motion-hero-push",
+      "group": "motion",
+      "model": "google/veo3.1/image-to-video",
+      "ext": "mp4",
+      "body": {
+        "image": "https://d2h7xmz5gqybh9.cloudfront.net/output/f3bae1a7-a764-4365-be31-85820ddf1c23.png",
+        "prompt": "Slow, controlled cinematic camera movement. A very subtle forward dolly toward the shoe while translucent fabric moves naturally in the air, catching sunlight and gently changing shape. Fine dust particles move through the light. The shoe remains completely stable and physically realistic. Premium commercial cinematography. Natural motion. Subtle depth shift. No dramatic movement. No morphing. No object deformation. Hold on the product at the end.",
+        "negative_prompt": "morphing, warping, melting, object deformation, changing product shape, abrupt camera cuts, flickering, artificial motion, CGI look, text, logos, extra limbs, distorted faces, oversharpened, plastic skin",
+        "aspect_ratio": "16:9",
+        "duration": 8,
+        "resolution": "1080p",
+        "generate_audio": false
+      },
+      "prediction_id": "d6df0905b90b409e859234277fdae60d",
+      "status": "completed",
+      "outputs": [
+        "https://d2h7xmz5gqybh9.cloudfront.net/predictions/d6df0905b90b409e859234277fdae60d/1.mp4"
+      ],
+      "local": "public/lab/motion/motion-hero-push.mp4"
+    }
+  ]
+}

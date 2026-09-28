@@ -1,33 +1,11 @@
 import { HeroStill, Machine } from "@/components/machine";
 import { contactHref, site } from "@/lib/site";
 
-const situations = [
-  {
-    num: "01",
-    title: "The client wants 50 assets.",
-    body: "Product variations. Background changes. Formats. Localizations. Three rounds of feedback.",
-    note: "This is where I'd look for automation.",
-  },
-  {
-    num: "02",
-    title: "The creative director wants 30 directions.",
-    body: "Not one more moodboard meeting. Actual exploration you can put in front of a client.",
-    note: "This is where I'd look for leverage.",
-  },
-  {
-    num: "03",
-    title: "The client wants something that doesn't exist yet.",
-    body: "A character. A world. A product still in development. Something you can't shoot tomorrow.",
-    note: "This is where I'd prototype first.",
-  },
-];
-
 const beliefs = [
   "Most AI-generated advertising still looks like AI-generated advertising.",
   "The model isn't usually the bottleneck.",
   "Don't automate mediocre creative.",
   "Don't build an AI department before you've found something worth scaling.",
-  "The best AI workflow is the one your team actually uses.",
 ];
 
 const method = [
@@ -76,8 +54,8 @@ export default function Home() {
             </h1>
             <p className="lede">
               I build and operate AI image and video products. CerebroBro is
-              where I take that experience and apply it to the messy, expensive
-              stuff creative teams actually have to ship.
+              where I apply that experience to the messy, expensive stuff
+              creative teams actually have to ship.
             </p>
             <div className="actions">
               <a className="button" href={contactHref}>
@@ -96,28 +74,13 @@ export default function Home() {
           <Machine />
         </section>
 
-        <section className="situations" id="start">
-          <div className="section-head">
-            <h2>Here&apos;s where I&apos;d start.</h2>
-          </div>
-          <div className="situation-list">
-            {situations.map((item) => (
-              <article key={item.num} className="situation">
-                <div className="situation-num">{item.num}</div>
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.body}</p>
-                  <p className="situation-note">{item.note}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-
         <section className="method" id="method">
           <div className="method-intro">
             <h2>I don&apos;t start with the model.</h2>
-            <p>Don&apos;t show me your AI stack. Show me what you&apos;re trying to make.</p>
+            <p>
+              Don&apos;t show me your AI stack. Show me what you&apos;re trying
+              to make.
+            </p>
           </div>
           <div className="method-list">
             {method.map((step) => (
@@ -200,6 +163,10 @@ export default function Home() {
             <p>
               CerebroBro is the consulting practice that comes out of that —
               not a deck about the future of creativity.
+            </p>
+            <p className="operator-proof">
+              AI image &amp; video products · years in production · not a
+              workshop guy
             </p>
           </div>
         </section>

@@ -2,77 +2,57 @@
 
 import { useState } from "react";
 
-type Asset = {
+interface Asset {
   src: string;
   label: string;
   kind?: "image" | "video";
-};
+}
 
-type Experiment = {
+interface Experiment {
   id: string;
-  label: string;
   title: string;
-  caption: string;
   note: string;
   assets: Asset[];
-};
+}
 
 const experiments: Experiment[] = [
   {
     id: "worlds",
-    label: "01 — One object, many worlds",
-    title: "One object → many worlds",
-    caption: "ONE PERFUME BOTTLE → MULTIPLE ART DIRECTIONS",
-    note: "Start with a plain product still. Then build radically different creative worlds without redesigning the object.",
+    title: "One product, many worlds",
+    note: "One plain product shot, restaged in completely different art directions. The bottle never changes.",
     assets: [
-      { src: "/lab/perfume/perfume-ref-03.png", label: "Reference" },
+      { src: "/lab/perfume/perfume-ref-03.png", label: "Original" },
       { src: "/lab/perfume/world-alpine.png", label: "Alpine" },
       { src: "/lab/perfume/world-brutalist.png", label: "Brutalist" },
       { src: "/lab/perfume/world-still-life.png", label: "Still life" },
       { src: "/lab/perfume/world-greenhouse.png", label: "Greenhouse" },
-      { src: "/lab/perfume/world-studio-void.png", label: "Studio void" },
+      { src: "/lab/perfume/world-studio-void.png", label: "Studio" },
       { src: "/lab/perfume/world-rain-city.png", label: "Rain city" },
     ],
   },
   {
     id: "character",
-    label: "02 — Character lock",
-    title: "One character → many scenes",
-    caption: "ONE FACE → MULTIPLE SCENES",
-    note: "Lock an identity first. Then put her in different places without drifting into a new person each time.",
+    title: "One face, many scenes",
+    note: "Lock a character once, then move her between locations without her turning into someone else.",
     assets: [
-      { src: "/lab/character/character-ref-01.png", label: "Lock" },
+      { src: "/lab/character/character-ref-01.png", label: "Original" },
       { src: "/lab/scenes/char-museum.png", label: "Museum" },
       { src: "/lab/scenes/char-cafe.png", label: "Cafe" },
       { src: "/lab/scenes/char-coast.png", label: "Coast" },
       { src: "/lab/scenes/char-workspace.png", label: "Studio" },
-      {
-        src: "/lab/motion/motion-character.mp4",
-        label: "Motion",
-        kind: "video",
-      },
+      { src: "/lab/motion/motion-character.mp4", label: "Motion", kind: "video" },
     ],
   },
   {
     id: "motion",
-    label: "03 — Still → motion",
-    title: "Still → motion",
-    caption: "ONE STILL → CINEMATIC MOTION",
-    note: "Same universe as the still. Quiet camera. Fabric and atmosphere move. The product stays locked.",
+    title: "From still to motion",
+    note: "Stills turned into short clips. Slow camera, moving fabric, and the product stays exactly where it was.",
     assets: [
-      { src: "/lab/hero/hero-01.png", label: "Still A" },
-      {
-        src: "/lab/motion/motion-hero-push.mp4",
-        label: "Push-in",
-        kind: "video",
-      },
-      { src: "/lab/hero/hero-02.png", label: "Still B" },
-      {
-        src: "/lab/motion/motion-hero-parallax.mp4",
-        label: "Parallax",
-        kind: "video",
-      },
-      { src: "/lab/hero/hero-04.png", label: "Still C" },
+      { src: "/lab/hero/hero-01.png", label: "Still" },
+      { src: "/lab/motion/motion-hero-push.mp4", label: "Push-in", kind: "video" },
+      { src: "/lab/hero/hero-02.png", label: "Still" },
+      { src: "/lab/motion/motion-hero-parallax.mp4", label: "Parallax", kind: "video" },
+      { src: "/lab/hero/hero-04.png", label: "Still" },
     ],
   },
 ];
@@ -86,8 +66,13 @@ export function Machine() {
   const isVideo = featured.kind === "video";
 
   return (
-    <div className="machine" id="work">
-      <div className="machine-tabs" role="tablist" aria-label="Lab experiments">
+    <section className="lab" id="work">
+      <div className="lab-head">
+        <h2>Experiments</h2>
+        <p>Made for CerebroBro to test what works. Not client work.</p>
+      </div>
+
+      <div className="lab-tabs" role="tablist" aria-label="Experiments">
         {experiments.map((exp, i) => (
           <button
             key={exp.id}
@@ -100,70 +85,59 @@ export function Machine() {
               setSelected(0);
             }}
           >
-            {exp.label}
+            {exp.title}
           </button>
         ))}
       </div>
 
-      <div className="machine-stage">
-        <aside className="machine-brief">
-          <div className="machine-kicker">The lab</div>
-          <h3 className="machine-title">{experiment.title}</h3>
-          <p className="machine-note">{experiment.note}</p>
-          <p className="machine-live-label">
-            <span className="pulse" />
-            {featured.label}
-          </p>
+      <div className="lab-stage">
+        <aside className="lab-side">
+          <h3>{experiment.title}</h3>
+          <p>{experiment.note}</p>
+          <div className="lab-thumbs" role="list">
+            {experiment.assets.map((asset, i) => (
+              <button
+                key={asset.src}
+                type="button"
+                role="listitem"
+                className={i === selected ? "is-active" : undefined}
+                onClick={() => setSelected(i)}
+                aria-label={`Show ${asset.label}`}
+              >
+                {asset.kind === "video" ? (
+                  <video src={asset.src} muted playsInline preload="metadata" />
+                ) : (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={asset.src} alt="" width={464} height={576} />
+                )}
+                <span>{asset.label}</span>
+              </button>
+            ))}
+          </div>
         </aside>
 
-        <div className="machine-viz" data-kind={isVideo ? "video" : "image"}>
+        <div className="lab-viz" data-kind={isVideo ? "video" : "image"}>
           {isVideo ? (
             <video
               key={featured.src}
-              className="machine-feature"
               src={featured.src}
               autoPlay
               muted
               loop
               playsInline
-              controls={false}
             />
           ) : (
             // eslint-disable-next-line @next/next/no-img-element
             <img
-              className="machine-feature"
               src={featured.src}
-              alt={`${experiment.title} — ${featured.label}`}
+              alt={`${experiment.title}: ${featured.label}`}
               width={1856}
               height={2304}
             />
           )}
         </div>
       </div>
-
-      <div className="machine-thumbs" role="list">
-        {experiment.assets.map((asset, i) => (
-          <button
-            key={asset.src}
-            type="button"
-            role="listitem"
-            className={i === selected ? "is-active" : undefined}
-            onClick={() => setSelected(i)}
-            aria-label={`Show ${asset.label}`}
-          >
-            {asset.kind === "video" ? (
-              <video src={asset.src} muted playsInline preload="metadata" />
-            ) : (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img src={asset.src} alt="" width={464} height={576} />
-            )}
-            <span>{asset.label}</span>
-          </button>
-        ))}
-      </div>
-
-      <p className="machine-caption">{experiment.caption}</p>
-    </div>
+    </section>
   );
 }
 
@@ -173,14 +147,11 @@ export function HeroStill() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/lab/hero/hero-01.png"
-        alt="Experimental campaign still of an unbranded black running shoe on stone with flowing fabric"
+        alt="Campaign still of a black running shoe on stone with flowing fabric"
         width={1856}
         height={2304}
       />
-      <figcaption>
-        Independent experiment — not a client case study. Generated for
-        CerebroBro.
-      </figcaption>
+      <figcaption>Experiment, not client work.</figcaption>
     </figure>
   );
 }
